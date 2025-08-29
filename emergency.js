@@ -46,4 +46,10 @@ for (let i = 0; i < callButtons.length; i++) {
     });
 }
 
+const clearHistoryButton = document.getElementById('clear-history');
+
+clearHistoryButton.addEventListener('click', function () {
+    callHistoryList.innerHTML = '';
+});
+
 
