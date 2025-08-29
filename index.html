@@ -28,7 +28,7 @@
                 <img src="./assets/coin.png" alt="" class="h-[24px] w-[24px]">
             </button>
             <button class=" bg-[#00a63e] text-white rounded-3xl p-3 w-[120px]">
-                <h1>2 Copy</h1>
+                <h1><span id="navbar-copy-count">0</span>Copy</h1>
             </button>
         </div>
     </div>
@@ -61,7 +61,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-8 flex justify-center items-center text-[#5C5C5C]">All</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="1" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -87,7 +87,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-12 flex justify-center items-center text-[#5C5C5C]">Police</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="2" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -113,7 +113,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-8 flex justify-center items-center text-[#5C5C5C]">Fire</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="3" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -124,6 +124,7 @@
         </div>
        </div>   
     </div>
+
     <div class="bg-white rounded-xl shadow-[0_2px_3px_0_#00000026]">
        <div class="p-4"> 
         <div class="flex justify-between items-center">
@@ -139,7 +140,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-14 flex justify-center items-center text-[#5C5C5C]">Health</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="4" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -150,6 +151,7 @@
         </div>
        </div>   
     </div>
+
     <div class="bg-white rounded-xl shadow-[0_2px_3px_0_#00000026]">
        <div class="p-4"> 
         <div class="flex justify-between items-center">
@@ -165,7 +167,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-10 flex justify-center items-center text-[#5C5C5C]">Help</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="5" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -176,6 +178,7 @@
         </div>
        </div>   
     </div>
+
     <div class="bg-white rounded-xl shadow-[0_2px_3px_0_#00000026]">
        <div class="p-4"> 
         <div class="flex justify-between items-center">
@@ -191,7 +194,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-10 flex justify-center items-center text-[#5C5C5C]">Govt</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button  class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="6"  class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -217,7 +220,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-20 flex justify-center items-center text-[#5C5C5C]">Electricity</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="7" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -243,7 +246,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-10 flex justify-center items-center text-[#5C5C5C]">NGO</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="8" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
@@ -269,7 +272,7 @@
         <p class="bg-[#F2F2F2] rounded-lg w-16 flex justify-center items-center text-[#5C5C5C]">Travel</p>
         </div>
          <div class="flex justify-between gap-2">
-        <button class="flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
+        <button data-id="9" class="copy-btn flex justify-center items-center gap-2 border-2 border-[#d4d6d5] bg-white p-4 w-[180px] h-[40px] rounded-md text-[#5C5C5C]">
             <i class="fa-solid fa-copy"></i>
             <h1>Copy</h1>
             </button>
